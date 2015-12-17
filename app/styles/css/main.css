@@ -1,0 +1,52 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Body */
+body {
+	background: rgba(255,255,255 ,1);
+	font-family: 'Work Sans', sans-serif;
+}
+/* Titles & text */
+h1 {
+	font-family: "Poppins", sans-serif;
+	text-transform: lowercase;
+	color: white;
+}
+p {
+	font-family: "Work Sans", sans-serif;
+}
+
+.navigatie {
+	background: rgba(16, 30, 38 ,1.0);
+	padding: 2em 0 2em 0;
+}
+.navigatie a span {
+	float: right;
+}
+.nav-logo {
+	color: white;
+	font-size: 2em;
+}
+
+.jumbotron {
+	background: url("images/m2.jpg");
+	background-size: cover;
+}
+
+/*
+* Media queries
+* Mobile first and then upscaling
+*/
+@media (min-width: 20rem) {	
+}
+@media (min-width: 30rem) {
+}
+@media (min-width: 42.5rem) {
+}
+@media (min-width: 60rem) {	
+}
+@media (min-width: 71.25rem) {	
+}

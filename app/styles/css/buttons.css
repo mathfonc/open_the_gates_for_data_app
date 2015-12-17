@@ -1,0 +1,19 @@
+/* Hamburger icon */
+.hamburger-icon { /* outer bars */
+    position: relative;
+    display: inline-block;
+    width: 2.8em;
+    height: 2.4em;
+    margin-right: 0.3em;
+    border-top: 0.4em solid rgba(217, 183, 121,1.0);
+    border-bottom: 0.4em solid rgba(217, 183, 121,1.0);
+}
+
+.hamburger-icon:before { /* middle bar */
+    content: "";
+    position: absolute;
+    top: 0.55em;
+    left: 0px;
+    width: 100%;
+    border-top: 0.4em solid rgba(217, 183, 121,1.0);
+}
