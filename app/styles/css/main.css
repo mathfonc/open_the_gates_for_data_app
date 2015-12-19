@@ -20,14 +20,26 @@ body {
 h1 {
 	font-family: "Poppins", sans-serif;
 	text-transform: lowercase;
+  color: rgba(255,255,255 ,1);
+}
+h2{
+	color: #8C6E5E;
 }
 p {
 	font-family: "Work Sans", sans-serif;
+	color: #30353E;
+  line-height: 1.5em;
 }
+.title-greeting {
+  color: rgba(255,255,255,1);
+  margin-left: 0.5em;
+}
+
+
 
 .navigatie {
 	background: rgba(16, 30, 38 ,1.0);
-	padding: 2em 0 2em 0;
+  position: static;
 }
 .nav-logo {
 	color: white;
@@ -38,9 +50,47 @@ p {
 }
 
 .jumbotron {
-	background: url("images/m2.jpg");
+	background: url("images/newyork.jpg");
 	background-size: cover;
+  background-position: center;
+  height: 14em;
 }
+.jumbotron h1 {
+  margin: 0;
+}
+.onepage h1{
+	color: #313540;
+}
+.ranks {
+	background-color: white;
+}
+.ranks h1 {
+	 color: #313540;
+}
+.country {
+	background-color: #313540;
+}
+.country h1{
+	color:white;
+}
+.procedures {
+	background-color: #D9A84B;
+}
+.time {
+	background-color: white;
+}
+.density {
+	background-color: #D9A84B;
+}
+.interest {
+	background-color: white;
+}
+.inflation {
+	background-color: #D9A84B;
+}
+
+
+
 
 /* Hamburger menu */
 .b-container {
@@ -113,6 +163,21 @@ p {
   .nav-logo h1 {
     margin-top: 1rem;
   }
+  /* h1 sizes */
+  .onepage h1{
+	 font-size: 1.4em;
+  }
+  /* jumbotron title sizes */
+  .jumbotron h1 {
+	 font-size: 3em;
+  }
+  .title-greeting {
+    font-size: 1.2em;
+  }
+  .jumbotron {
+    padding-top: 4rem;
+    height: 16em;
+  }
 }
 @media (min-width: 30rem) {
 	.nav-logo {
@@ -124,6 +189,16 @@ p {
   .b-container {
     margin-top: 1rem;
   }
+  /* jumbotron title sizes */
+  .jumbotron h1 {
+	 font-size: 4em;
+  }
+  .title-greeting {
+    font-size: 1.4em;
+  }
+  .jumbotron {
+    height: 18em;
+  }
 }
 @media (min-width: 42.5rem) {
 	.nav-logo {
@@ -132,18 +207,59 @@ p {
   .b-container {
     margin-top: 1.8rem;
   }
+  /* jumbotron title sizes */
+  .jumbotron h1 {
+	 font-size: 5em;
+  }
+  .title-greeting {
+    font-size: 1.6em;
+  }
+  .jumbotron {
+    height: 24em;
+  }
 }
 @media (min-width: 60rem) {	
 	.nav-logo {
 	font-size: 1.8em;
 	}
+  /* jumbotron title sizes */
+  .jumbotron h1 {
+	 font-size: 6em;
+  }
+  .title-greeting {
+    font-size: 1.6em;
+  }
+  .jumbotron {
+    height: 28em;
+  }
+  
 }
 @media (min-width: 71.25rem) {	
+  /* logo size: desktop */
 	.nav-logo {
 	font-size: 1.8em;
 	}
+  /* hide hamburger for desktop */
   .b-container, .b-menu, .b-bun, .b-bun--top, .b-bun--mid,
   .b-bun--bottom, .b-menu.open, .b-container.open {
    visibility: hidden;
+  }
+  /* jumbotron title sizes */
+  .jumbotron h1 {
+	 font-size: 8em;
+  }
+  .title-greeting {
+    font-size: 1.8em;
+  }
+  .jumbotron {
+    height: 40em;
+  }
+  /* h1 sizes */
+  .onepage h1{
+	 font-size: 2.2em;
+  }
+  /* header padding */
+  .navigatie {
+	padding: 2em 0 2em 0;
   }
 }

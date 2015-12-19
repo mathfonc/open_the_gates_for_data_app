@@ -1,27 +1,10 @@
-
-
 @media (min-width: 20rem) {
-	body {
-		background: rgba(155, 89, 182,1.0);
-	}
 }
 @media (min-width: 30rem) {
-	body {
-		background: rgba(155, 89, 182,0.8);
-	}
 }
 @media (min-width: 42.5rem) {
-	body {
-		background: rgba(155, 89, 182,0.6);
-	}
 }
 @media (min-width: 60rem) {
-	body {
-		background: rgba(155, 89, 182,0.4);
-	}
 }
 @media (min-width: 71.25rem) {
-	body {
-		background: rgba(155, 89, 182,0.2);
-	}
 }
