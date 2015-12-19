@@ -2,11 +2,11 @@
 	
 	$('.b-menu').on('click', function() {
 		//caching
-		$burger_container = $('.b-container');
-		$burger_menu = $('.b-menu');
-		$nav = $('.navigatie');
-		$nav_list = $('.nav-list');
-		$body = $('body');
+		var $burger_container = $('.b-container');
+		var $burger_menu = $('.b-menu');
+		var $nav = $('.navigatie');
+		var $nav_list = $('.nav-list');
+		var $body = $('body');
 		
 		//animate hamburger menu
 		$burger_container.toggleClass('open');
@@ -17,7 +17,7 @@
 		$nav_list.toggleClass('show-nav');
 		
 		//disable scroll when navigation is on canvas
-		$body.toggleClass('fixed__debug');
+		$body.toggleClass('disable_scroll');
 		
 		//hide navigation when link is clicked
 		$nav_list.children().on('click', function() {
@@ -30,7 +30,7 @@
 			$burger_menu.removeClass('open');
 			
 			//re-enable scrolling
-			$body.removeClass('fixed__debug');
+			$body.removeClass('disable_scroll');
 		});
   });
 })();
