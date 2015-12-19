@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -49,8 +50,12 @@ p {
 .jumbotron h1 {
   margin: 0;
 }
+
 .onepage h1{
 	color: #313540;
+}
+.segment {
+    padding: 1.5rem 0 1.8rem 0;
 }
 .ranks {
 	background-color: white;
@@ -329,4 +334,36 @@ p {
   .onepage h1{
 	 font-size: 2.2em;
   }
+  
+  /* alternate layout - desktop */
+  .procedures {
+      width: 50%;
+      height: 25rem;
+      padding-left: 8rem;
+      padding-right: 3rem;
+      float: left;
+      background-color: rgba(255,255,255 ,1);
+    }
+  .time {
+      width: 50%;
+      height: 25rem;
+      padding-right: 8rem;
+      padding-left: 3rem;
+      float: left;
+    }
+  .interest {
+      width: 50%;
+      height: 20rem;
+      padding-left: 8rem;
+      padding-right: 3rem;
+      float: left;
+    }
+  .inflation {
+      width: 50%;
+      height: 20rem;
+      padding-right: 8rem;
+      padding-left: 3rem;
+      float: left;
+      background-color: rgba(255,255,255 ,1);
+    }
 }
