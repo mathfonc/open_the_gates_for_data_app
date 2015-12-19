@@ -3,13 +3,6 @@ html, body {
     padding: 0;
     height: 100%;
 }
-/* DEBUG CLASSES */
-.red {
-  background: red;
-}
-.rel {
-  position: relative;
-}
 
 /* Body */
 body {
@@ -37,9 +30,8 @@ p {
 
 
 
-.navigatie {
+.header {
 	background: rgba(16, 30, 38 ,1.0);
-  position: static;
 }
 .nav-logo {
 	color: white;
@@ -91,7 +83,6 @@ p {
 
 
 
-
 /* Hamburger menu */
 .b-container {
   position: relative;
@@ -140,6 +131,10 @@ p {
 }
 .b-container.open .b-bun--top {
   -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
   top: 14px;
 }
 .b-container.open .b-bun--mid {
@@ -147,6 +142,10 @@ p {
 }
 .b-container.open .b-bun--bottom {
   -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
   top: 8px;
 }
 
@@ -202,10 +201,10 @@ p {
 }
 @media (min-width: 42.5rem) {
 	.nav-logo {
-	font-size: 1.8em;
+	font-size: 1.2em;
 	}
   .b-container {
-    margin-top: 1.8rem;
+    margin-top: 1rem;
   }
   /* jumbotron title sizes */
   .jumbotron h1 {
@@ -220,8 +219,11 @@ p {
 }
 @media (min-width: 60rem) {	
 	.nav-logo {
-	font-size: 1.8em;
+	font-size: 1.6em;
 	}
+  .b-container {
+    margin-top:1.4em;
+  }
   /* jumbotron title sizes */
   .jumbotron h1 {
 	 font-size: 6em;
@@ -237,7 +239,7 @@ p {
 @media (min-width: 71.25rem) {	
   /* logo size: desktop */
 	.nav-logo {
-	font-size: 1.8em;
+	font-size: 1.6em;
 	}
   /* hide hamburger for desktop */
   .b-container, .b-menu, .b-bun, .b-bun--top, .b-bun--mid,
@@ -252,14 +254,10 @@ p {
     font-size: 1.8em;
   }
   .jumbotron {
-    height: 40em;
+    height: 30em;
   }
   /* h1 sizes */
   .onepage h1{
 	 font-size: 2.2em;
-  }
-  /* header padding */
-  .navigatie {
-	padding: 2em 0 2em 0;
   }
 }
