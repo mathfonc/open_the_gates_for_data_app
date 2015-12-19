@@ -1,11 +1,6 @@
 * {
 	box-sizing: border-box;
 }
-body {
-	font-size: 16px;
-	margin: 0;
-	padding: 0;
-}
 
 /* 
 * Gridsysteem
@@ -42,11 +37,6 @@ body {
 .grid__container::after {
 	clear: both; 
 }
-.grid__container--debug {
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
-	background: rgba(255, 0, 255, 0.5); 
-}
 
 /*
 	Row
@@ -66,12 +56,6 @@ body {
 .grid__row::after {
 	clear: both; 
 }
-.grid__row--debug {
-	background: rgba(52, 152, 219, 1.0); 
-}
-.grid__row--debug .grid__row--debug {
-	padding-top: 0;
-}
 
 /*
 	Column
@@ -87,15 +71,6 @@ body {
 	margin-bottom: 1rem;
 	overflow: hidden; 
 }
-.grid__column--debug {
-	 background: rgba(46, 204, 113, 1.0);
-	 height: 16px;
-}
-.grid__column--debug>div {
-	 background: rgba(26, 188, 156, 1.0);
-	 height: 100%;
-}
-
 /* 
 	Responsive media queries
    	Breakpoints

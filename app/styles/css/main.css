@@ -3,6 +3,13 @@ html, body {
     padding: 0;
     height: 100%;
 }
+/* DEBUG CLASSES */
+.red {
+  background: red;
+}
+.rel {
+  position: relative;
+}
 
 /* Body */
 body {
@@ -13,7 +20,6 @@ body {
 h1 {
 	font-family: "Poppins", sans-serif;
 	text-transform: lowercase;
-	color: white;
 }
 p {
 	font-family: "Work Sans", sans-serif;
@@ -23,12 +29,12 @@ p {
 	background: rgba(16, 30, 38 ,1.0);
 	padding: 2em 0 2em 0;
 }
-.navigatie a span {
-	float: right;
-}
 .nav-logo {
 	color: white;
-	font-size: 2em;
+	font-size: 0.8em;
+}
+.nav-logo h1 {
+  margin: 0;
 }
 
 .jumbotron {
@@ -36,17 +42,108 @@ p {
 	background-size: cover;
 }
 
+/* Hamburger menu */
+.b-container {
+  position: relative;
+  float: right;
+  height: 60px;
+  margin-top: 0.4em;
+}
+.b-menu {
+  padding: 15px 15px 30px 15px;
+  bottom: 0;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: all 0.5s cubic-bezier(1,0,0,1);
+  transition: all 0.5s cubic-bezier(1,0,0,1);
+  z-index: 12;
+}
+
+.b-bun {
+  background: #D9A84B;
+  position: relative;
+  -webkit-transition: all 0.5s cubic-bezier(1,0,0,1);
+  -moz-transition: all 0.5s cubic-bezier(1,0,0,1);
+  -o-transition: all 0.5s cubic-bezier(1,0,0,1);
+  -ms-transition: all 0.5s cubic-bezier(1,0,0,1);
+  transition: all 0.5s cubic-bezier(1,0,0,1);
+}
+.b-bun--top {
+  height: 3px;
+  top: 0;
+  width: 35px;
+}
+.b-bun--mid {
+  height: 3px;
+  top: 8px;
+  width: 35px;
+}
+.b-bun--bottom {
+  height: 3px;
+  top: 16px;
+  width: 35px;
+}
+
+.b-menu.open {
+  bottom: 4px;
+}
+.b-container.open .b-bun--top {
+  -webkit-transform: rotate(45deg);
+  top: 14px;
+}
+.b-container.open .b-bun--mid {
+  opacity: 0;
+}
+.b-container.open .b-bun--bottom {
+  -webkit-transform: rotate(-45deg);
+  top: 8px;
+}
+
 /*
 * Media queries
 * Mobile first and then upscaling
 */
 @media (min-width: 20rem) {	
+  /* grootte logo */
+	.nav-logo {
+	font-size: 0.8em;
+	}
+  /* logo en hamburger op gelijke hoogte */
+  .nav-logo h1 {
+    margin-top: 1rem;
+  }
 }
 @media (min-width: 30rem) {
+	.nav-logo {
+	font-size: 1.2em;
+	}
+  .nav-logo h1 {
+    margin-top: 0.8rem;
+  }
+  .b-container {
+    margin-top: 1rem;
+  }
 }
 @media (min-width: 42.5rem) {
+	.nav-logo {
+	font-size: 1.8em;
+	}
+  .b-container {
+    margin-top: 1.8rem;
+  }
 }
 @media (min-width: 60rem) {	
+	.nav-logo {
+	font-size: 1.8em;
+	}
 }
 @media (min-width: 71.25rem) {	
+	.nav-logo {
+	font-size: 1.8em;
+	}
+  .b-container, .b-menu, .b-bun, .b-bun--top, .b-bun--mid,
+  .b-bun--bottom, .b-menu.open, .b-container.open {
+   visibility: hidden;
+  }
 }
