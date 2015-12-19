@@ -32,5 +32,12 @@
 			//re-enable scrolling
 			$body.removeClass('disable_scroll');
 		});
-  });
+	});
+	
+	//returns selected country
+	$('#country-list').change(function() {
+		var country = $('#country-list').val();
+		return country;
+	});
+	
 })();
