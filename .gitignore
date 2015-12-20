@@ -94,3 +94,4 @@ Thumbs.db
 # Frontend Automation project
 .tmp
 tests
+.vscode/settings.json
