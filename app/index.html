@@ -83,10 +83,7 @@
 							<div class="grid__column-bp1-12">				
 								<h1>Select your country</h1>
 								<form>
-									<select id="country-list">
-										<option value="Select your country">Select your country</option>
-										<option value="Belgium">Belgium</option>
-									</select>
+									<section class="countries-list"></section>
 								</form>
 							</div>
 						</div>
@@ -163,16 +160,25 @@
 		
 		<!-- Handlebars Template -->
 		<script id="select-options-countries" type="text/x-handlebars-template">
-			
+			{{#if this}}
+			<select id="country-list">
+                <option value="Select your country">Select your country</option>
+				{{#each this}}
+					<option value="{{name}}">{{name}}</option>
+				{{/each}}
+			</select>
+			{{else}}
+			<p>No countries present in the Worldbank database!</p>
+			{{/if}}
 		</script> <!-- End: Handlebars Template --> 
 		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA11oavJI6K0x138n9ROTLYz6DeOHNbQVs&callback=initMap" async defer></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.3/handlebars.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+		<script src="scripts/js/vendor/signals.js"></script>
 		<script src="scripts/js/vendor/hasher.js"></script>
 		<script src="scripts/js/vendor/crossroads.js"></script>
-		<script src="scripts/js/vendor/signals.js"></script>
         <script src="scripts/js/google_maps.js"></script>	
 		<script src="scripts/js/button.js"></script>
 		<script src="scripts/js/helpers.js"></script>	

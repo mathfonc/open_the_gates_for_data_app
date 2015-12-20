@@ -38,7 +38,7 @@ p {
 	background: #313540;
 	position: fixed;
   	z-index: 1;
- 	margin-top: -5rem;
+ 	margin-top: -5.1rem;
 }
 .nav-logo {
 	color: white;
@@ -53,7 +53,7 @@ p {
 	background-size: cover;
   	background-position: center;
   	height: 14em;
-	margin-top: 5rem;
+	margin-top: 5.1rem;
 }
 .jumbotron h1 {
   margin: 0;
@@ -127,7 +127,7 @@ p {
   font-family: 'Poppins', sans-serif;
   text-transform: lowercase;
   font-weight: 700;
-  padding: 1rem 1.2rem;
+  padding: 0.8rem 1rem;
 }
 .nav-list a {
   text-decoration: none;
@@ -328,6 +328,10 @@ p {
     font-size: 1.8em;
   }
   
+  .header {
+	  margin-top: -5.5rem;
+  }
+  
   /* jumbotron title sizes */
   .jumbotron h1 {
 	 font-size: 8em;
@@ -337,6 +341,7 @@ p {
   }
   .jumbotron {
     height: 30em;
+	margin-top: 5.5rem;
   }
   /* h1 sizes */
   .onepage h1{
