@@ -36,6 +36,9 @@ p {
 
 .header {
 	background: #313540;
+	position: fixed;
+  	z-index: 1;
+ 	margin-top: -5rem;
 }
 .nav-logo {
 	color: white;
@@ -48,8 +51,9 @@ p {
 .jumbotron {
 	background: url("images/newyork.jpg");
 	background-size: cover;
-  background-position: center;
-  height: 14em;
+  	background-position: center;
+  	height: 14em;
+	margin-top: 5rem;
 }
 .jumbotron h1 {
   margin: 0;
