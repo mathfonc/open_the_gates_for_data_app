@@ -35,9 +35,9 @@
 	});
 	
 	//returns selected country
-	$('#country-list').change(function() {
-		var country = $('#country-list').val();
-		return country;
+	$('.countries-list').change(function() {
+		var selectedCountry = $('#country-list').val();
+		alert(selectedCountry); //TO BE REMOVED LATER
 	});
 	
 })();
