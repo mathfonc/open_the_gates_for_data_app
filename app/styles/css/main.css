@@ -83,6 +83,19 @@ p {
 }
 .country h1{
 	color:white;
+  
+}
+ form {
+   width: 270px;
+   padding-left: 20px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   position: center;
+   border-style: solid;
+   border-radius: 7px;
+  border-width: 5px;
+  border-color: white;
+  
 }
 .procedures {
 	background-color: #D9A84B;
