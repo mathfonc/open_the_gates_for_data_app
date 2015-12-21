@@ -231,7 +231,9 @@ p {
   transform: rotate(-45deg);
   top: 8px;
 }
-
+.b-menu:hover .nav-list{
+  transform: scale(20,30);
+}
 /*
 * Media queries
 * Mobile first and then upscaling
