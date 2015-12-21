@@ -55,6 +55,13 @@ p {
   	height: 14em;
 	margin-top: 5.1rem;
 }
+.error {
+	background: url("images/yoda.jpg");
+	background-size: cover;
+  	background-position: center;
+  	height: 14em;
+	margin-top: 5.1rem;
+}
 .jumbotron h1 {
   margin: 0;
 }
