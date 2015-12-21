@@ -13,7 +13,11 @@ var geocoder;
 		geocoder = new google.maps.Geocoder();
 		geocoder.geocode({
 			"address": selectedCountry
-		}, function(results) {
-			map.setCenter(results[0].geometry.location);
-		})
+		}, function(results, status) {
+			if(status == google.maps.GeocoderStatus.OK) {
+				map.setCenter(results[0].geometry.location);
+			} else {
+				console.log("Geocode was not succesful: " + status);
+			}
+		});
 	});
