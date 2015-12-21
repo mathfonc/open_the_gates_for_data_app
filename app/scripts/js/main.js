@@ -67,7 +67,9 @@
 			this.registerListenersForListLayout();
 			
 			this.loadCountriesFromWorldBankAPI();// Execute method loadCountriesFromWorldBankAPI(): Load countries from the Worldbank API
+			
 		},
+		
 		registerNavigationToggleListeners: function() {
 			var toggles = document.querySelectorAll('.navigation-toggle');
 			
@@ -167,6 +169,7 @@
 			}	
 			document.querySelector('.countries-list').innerHTML = this._hbsCache[hbsTmplName](this._dataCountries);// Write compiled content to the appropriate container
 		}
+		
 	};
 	
 	App.init();// Intialize the application
