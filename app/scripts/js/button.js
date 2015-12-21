@@ -34,10 +34,4 @@
 		});
 	});
 	
-	//returns selected country
-	$('.countries-list').change(function() {
-		var selectedCountry = $('#country-list').val();
-		alert(selectedCountry); //TO BE REMOVED LATER
-	});
-	
 })();
