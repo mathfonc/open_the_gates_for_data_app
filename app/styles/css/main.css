@@ -91,18 +91,17 @@ p {
 	color:white;
   
 }
- form {
-   width: 270px;
-   padding-left: 20px;
-   padding-top: 15px;
-   padding-bottom: 15px;
-   position: center;
-   border-style: solid;
-   border-radius: 7px;
-  border-width: 5px;
-  border-color: white;
-  
+
+/* Dropdown list */
+select {
+	width: 18rem;
+	height: 3rem;
+	border: 5px solid #f8f8f8;
 }
+select:focus {
+	outline: none;
+}
+
 .procedures {
 	background-color: #D9A84B;
 }
