@@ -4,11 +4,6 @@ html, body {
     height: 100%;
     -webkit-font-smoothing: antialiased;
 }
-
-#map {
-    height: 30rem;
-}
-
 body {
 	background: rgba(255,255,255 ,1);
 	font-family: 'Work Sans', sans-serif;
@@ -32,13 +27,15 @@ p {
   margin-left: 0.5em;
 }
 
+/* Google Maps canvas */
+#map {
+    height: 30rem;
+}
 
 
 .header {
 	background: #313540;
-	position: fixed;
   	z-index: 1;
- 	margin-top: -5.1rem;
 }
 .nav-logo {
 	color: white;
@@ -53,7 +50,7 @@ p {
 	background-size: cover;
   	background-position: center;
   	height: 14em;
-	margin-top: 5.1rem;
+	/*margin-top: 5.1rem;*/
 }
 .error {
   z-index: 10;
@@ -342,19 +339,10 @@ select:focus {
 	.nav-logo {
 	font-size: 1.6em;
 	}
-  /* hide hamburger for desktop 
-  .b-container, .b-menu, .b-bun, .b-bun--top, .b-bun--mid,
-  .b-bun--bottom, .b-menu.open, .b-container.open {
-   visibility: hidden;
-  }*/
   
   /* off-canvas menu links size */
   .nav-list li {
     font-size: 1.8em;
-  }
-  
-  .header {
-	  margin-top: -5.5rem;
   }
   
   /* jumbotron title sizes */
@@ -366,7 +354,6 @@ select:focus {
   }
   .jumbotron {
     height: 30em;
-	margin-top: 5.5rem;
   }
   /* h1 sizes */
   .onepage h1{
